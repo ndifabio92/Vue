@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+<div id="app" class="container mt-5">
+    <h1> {{ saludo }} </h1>
+    <button @click="saludo = 'saludo cambiado'">Cambiar</button>
+    <button @click="destruir()">Destruir</button>
+</div>
+
+<script src="app.js"></script>

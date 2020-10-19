@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+<div id="app" class="container mt-5">
+    <div :class="['p-3', 'text-white', fondo]">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus dolor quod vitae nobis odio rerum sit natus repellendus quaerat inventore sunt porro alias laudantium veritatis animi sint voluptates, ducimus numquam!</p>
+    </div>
+    <input type="text" class="form-control my-3" v-model="fondo">
+    <div class="text-white p-3" :class="{'bg-info' : color, 'bg-success' : !color}">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veritatis, molestiae, quos culpa necessitatibus temporibus aut consequuntur, et dignissimos quas nisi. Tempora velit minima veritatis dicta, cum corporis cumque recusandae!</p>
+    </div>
+    <button class="btn btn-primary mt-2" @click="color = !color"> Cambiar</button>
+</div>
+
+<script src="app.js"></script>
